@@ -84,11 +84,17 @@ export function Footer() {
 
         <hr className="border-white/5 mb-10" />
 
+        {/* Bottom Section with Legal Links */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-white/20 text-xs font-medium uppercase tracking-widest">
             © {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved.
           </p>
           
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/40">
+            <a href="#privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="#terms-and-conditions" className="hover:text-primary transition-colors">Terms & Conditions</a>
+          </div>
+
           <button 
             onClick={scrollToTop}
             className="flex items-center gap-2 text-primary hover:text-white transition-colors group"
