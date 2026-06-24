@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -14,6 +9,9 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { EmergencyBanner } from './components/FloatingCTA';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsAndConditions from './components/TermsAndConditions';
+
 import { BUSINESS_INFO } from './constants';
 
 export default function App() {
@@ -33,16 +31,14 @@ export default function App() {
         <Navbar />
         
         <main>
+          {/* Home Page Content */}
           <Hero />
-          
           <div className="relative">
-            {/* Background pattern */}
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none -z-10" />
             
             <About />
             <Services />
             
-            {/* Why Choose Us - Extra Section */}
             <section className="py-32 bg-primary/5 border-y border-white/5">
               <div className="max-w-7xl mx-auto px-4">
                 <div className="grid md:grid-cols-4 gap-8">
@@ -67,6 +63,10 @@ export default function App() {
             <SectionDivider />
             <Contact />
           </div>
+
+          {/* Legal Pages */}
+          <PrivacyPolicy />
+          <TermsAndConditions />
         </main>
 
         <Footer />
