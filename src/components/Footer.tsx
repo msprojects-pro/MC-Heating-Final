@@ -1,5 +1,4 @@
-import { motion } from 'motion/react';
-import { Mail, Phone, MapPin, Facebook, MessageCircle, ArrowUp } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
 import { Logo } from './Logo';
 import { BUSINESS_INFO, NAV_LINKS, SOCIAL_LINKS } from '../constants';
 
@@ -84,7 +83,7 @@ export function Footer() {
 
         <hr className="border-white/5 mb-10" />
 
-        {/* Bottom Section with Legal Links */}
+        {/* Bottom Legal Links */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-white/20 text-xs font-medium uppercase tracking-widest">
             © {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved.
